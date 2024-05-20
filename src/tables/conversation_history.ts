@@ -36,6 +36,11 @@ export default class ConversationHistory {
     return ConversationHistory.parse(convo.dataValues);
   }
 
+  static async doesConversationExist(id: string): Promise<boolean> {
+    const convo = await ConversationTable.findByPk(id);
+    return !!convo;
+  }
+
   static async updateConversationHistory(id: string, history: ChatCompletionMessageParam[]) {
     await ConversationTable.update(
       { historyJSON: JSON.stringify(history) },
