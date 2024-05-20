@@ -1,0 +1,41 @@
+{
+  "experimentName": "exp1",
+  "testName": "t4",
+  "description": "",
+  "featureFlags": {
+    "f1": 1
+  },
+  "agentId": "v1",
+  "testCaseDatasetName": "test_cases",
+  "job": {
+    "status": "completed",
+    "id": "5b779799-ae03-426c-97a8-44f823d8d68d"
+  },
+  "createdAt": 1716181204327,
+  "result": [
+    {
+      "input": {
+        "userMessage": "Hello, how are you?"
+      },
+      "output": {
+        "conversationId": "60926377-9222-4a65-bd59-a9d294822c05",
+        "message": "Hello! I'm just a computer program, so I don't have feelings, but I'm here to help you. How can I assist you today?"
+      },
+      "metrics": {
+        "Professionalism": 66
+      }
+    },
+    {
+      "input": {
+        "userMessage": "What's 2+2. Only answer with the result number, nothing else."
+      },
+      "output": {
+        "conversationId": "736a0ebf-1ac0-4677-87b1-97b119c34903",
+        "message": "4"
+      },
+      "metrics": {
+        "exact_match": true
+      }
+    }
+  ]
+}

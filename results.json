@@ -1,0 +1,28 @@
+[
+  {
+    "experimentId": "xp1",
+    "input": {
+      "userMessage": "Hello, how are you?"
+    },
+    "output": {
+      "conversationId": "8edd02a6-de18-4755-adcc-f22c2dd5e915",
+      "message": "Hello! I'm here and ready to help. How can I assist you today?"
+    },
+    "metrics": {
+      "Professionalism": 20
+    }
+  },
+  {
+    "experimentId": "xp1",
+    "input": {
+      "userMessage": "What's 2+2. Only answer with the result number, nothing else."
+    },
+    "output": {
+      "conversationId": "157b982d-4913-499a-b3f1-ed9d84d37ce5",
+      "message": "4"
+    },
+    "metrics": {
+      "exact_match": true
+    }
+  }
+]

@@ -5,14 +5,27 @@
   "main": "index.js",
   "scripts": {
     "palico": "palico-app",
-    "start": "docker-compose up",
-    "start:clean": "docker-compose up --build --force-recreate",
-    "dev": "npm run palico dev",
+    "services": "docker-compose up",
+    "dev": "nodemon --exec ts-node src/main.ts",
+    "reinstall": "(cd ../palico-main && nx run palico-app:publish-local) && npm uninstall @palico-ai/app && npm install @palico-ai/app",
     "ts": "ts-node",
     "build": "tsc"
   },
+  "nodemonConfig": {
+    "ignore": [
+      "src/experiments/**/*"
+    ]
+  },
   "dependencies": {
+    "@opentelemetry/api": "^1.8.0",
+    "@opentelemetry/auto-instrumentations-node": "^0.44.0",
+    "@opentelemetry/exporter-zipkin": "^1.24.0",
+    "@opentelemetry/sdk-metrics": "^1.24.0",
+    "@opentelemetry/sdk-node": "^0.51.0",
+    "@opentelemetry/sdk-trace-node": "^1.24.0",
+    "@palico-ai/app": "^1.12.11",
     "dotenv": "^16.4.3",
+    "nodemon": "^3.1.0",
     "openai": "^4.24.1"
   },
   "devDependencies": {
