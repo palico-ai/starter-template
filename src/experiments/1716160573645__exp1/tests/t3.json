@@ -1,0 +1,16 @@
+{
+  "experimentName": "exp1",
+  "testName": "t3",
+  "description": "",
+  "featureFlags": {
+    "f1": 1
+  },
+  "testCaseDatasetName": "test_cases",
+  "status": {
+    "state": "failed",
+    "message": "Either agentName or workflowName is required"
+  },
+  "createdAt": 1716391762838,
+  "result": [],
+  "jobId": "3b17a619-786d-4e57-8d2f-b699c97f8005"
+}

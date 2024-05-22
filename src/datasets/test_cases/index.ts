@@ -1,5 +1,5 @@
 import { Dataset, ExperimentTestCaseDataset } from "@palico-ai/app";
-import dataset from "./v1";
+import dataset from "./tests";
 
 export default class DefaultTestCaseDataset
   implements Dataset<ExperimentTestCaseDataset>

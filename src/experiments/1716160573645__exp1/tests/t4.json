@@ -5,37 +5,13 @@
   "featureFlags": {
     "f1": 1
   },
-  "agentId": "v1",
+  "agentName": "v1",
   "testCaseDatasetName": "test_cases",
-  "job": {
-    "status": "completed",
-    "id": "5b779799-ae03-426c-97a8-44f823d8d68d"
+  "status": {
+    "state": "failed",
+    "message": "Cannot find module '/Users/asifshikder/Projects/Palico/example-agent/src/agents/v1/index.ts'\nRequire stack:\n- /Users/asifshikder/Projects/Palico/example-agent/node_modules/@palico-ai/app/src/agent/model.js\n- /Users/asifshikder/Projects/Palico/example-agent/node_modules/@palico-ai/app/src/agent/executor.js\n- /Users/asifshikder/Projects/Palico/example-agent/node_modules/@palico-ai/app/src/app/app.js\n- /Users/asifshikder/Projects/Palico/example-agent/node_modules/@palico-ai/app/src/app/index.js\n- /Users/asifshikder/Projects/Palico/example-agent/node_modules/@palico-ai/app/src/index.js\n- /Users/asifshikder/Projects/Palico/example-agent/src/main.ts"
   },
-  "createdAt": 1716181204327,
-  "result": [
-    {
-      "input": {
-        "userMessage": "Hello, how are you?"
-      },
-      "output": {
-        "conversationId": "60926377-9222-4a65-bd59-a9d294822c05",
-        "message": "Hello! I'm just a computer program, so I don't have feelings, but I'm here to help you. How can I assist you today?"
-      },
-      "metrics": {
-        "Professionalism": 66
-      }
-    },
-    {
-      "input": {
-        "userMessage": "What's 2+2. Only answer with the result number, nothing else."
-      },
-      "output": {
-        "conversationId": "736a0ebf-1ac0-4677-87b1-97b119c34903",
-        "message": "4"
-      },
-      "metrics": {
-        "exact_match": true
-      }
-    }
-  ]
+  "createdAt": 1716391858953,
+  "result": [],
+  "jobId": "157d9994-ad50-4311-bbfc-f58aba52b558"
 }

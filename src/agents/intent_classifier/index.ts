@@ -1,24 +1,24 @@
 import {
   AgentRequestContent,
-  AgentRequestContext,
+  ConversationContext,
   LLMAgent,
   LLMAgentResponse,
 } from "@palico-ai/app";
-import { OpenAIConversation } from "./services/openai";
+import { OpenAIConversation } from "../../services/openai";
 import { trace } from "@opentelemetry/api";
-import ConversationHistory from "./tables/conversation_history";
+import ConversationHistory from "../../tables/conversation_history";
 
 const tracer = trace.getTracer("conversational-agent");
 
 export type AgentResponseData = Record<string, unknown>;
 
-export class ConversationalAgent implements LLMAgent {
-  static agentId = "v1";
+class IntentClassifierAgent implements LLMAgent {
+  static readonly NAME : string = __dirname.split("/").pop()!;
 
   async chat(
     conversationId: string,
     content: AgentRequestContent,
-    context: AgentRequestContext
+    context: ConversationContext
   ): Promise<LLMAgentResponse<AgentResponseData>> {
     return tracer.startActiveSpan("Agent Chat", async (span) => {
       console.log("Trace ID: " + span.spanContext().traceId);
@@ -76,3 +76,5 @@ export class ConversationalAgent implements LLMAgent {
     return response;
   }
 }
+
+export default IntentClassifierAgent;
