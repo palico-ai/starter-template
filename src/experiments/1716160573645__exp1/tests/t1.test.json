@@ -1,0 +1,148 @@
+{
+  "experimentName": "exp1",
+  "testName": "t1",
+  "description": "",
+  "featureFlags": {
+    "f1": 1
+  },
+  "agentName": "intent_classifier",
+  "testCaseDatasetName": "test_cases",
+  "status": {
+    "state": "success"
+  },
+  "createdAt": 1716489244290,
+  "result": [
+    {
+      "input": {
+        "userMessage": "Hello"
+      },
+      "tags": {
+        "intent": "greeting"
+      },
+      "output": {
+        "conversationId": "287d980c-da28-46db-80f7-b546583603de",
+        "message": "Hello! How can I assist you today?"
+      },
+      "metrics": {
+        "professionalism": 26
+      }
+    },
+    {
+      "input": {
+        "userMessage": "What is 2 + 2?"
+      },
+      "tags": {
+        "intent": "math"
+      },
+      "output": {
+        "conversationId": "6947049d-7bbd-4ea4-a22a-a0c217153d53",
+        "message": "2 + 2 equals 4."
+      },
+      "metrics": {
+        "exact-match": false
+      }
+    },
+    {
+      "input": {
+        "userMessage": "Goodbye"
+      },
+      "tags": {
+        "intent": "greeting"
+      },
+      "output": {
+        "conversationId": "44e58036-fd18-424e-ad55-ce41cfb0be57",
+        "message": "Goodbye! If you have any more questions in the future, feel free to ask. Have a great day!"
+      },
+      "metrics": {
+        "professionalism": 5
+      }
+    },
+    {
+      "input": {
+        "userMessage": "What is 3 + 3?"
+      },
+      "tags": {
+        "intent": "math"
+      },
+      "output": {
+        "conversationId": "79bcc405-053e-451c-8bcc-90ec3bf06cc9",
+        "message": "3 + 3 equals 6."
+      },
+      "metrics": {
+        "exact-match": false
+      }
+    },
+    {
+      "input": {
+        "userMessage": "Hello"
+      },
+      "tags": {
+        "intent": "greeting"
+      },
+      "output": {
+        "conversationId": "5761432c-54f1-48c2-8ac2-e4cce442d95c",
+        "message": "Hello! How can I assist you today?"
+      },
+      "metrics": {
+        "professionalism": 84
+      }
+    },
+    {
+      "input": {
+        "userMessage": "Who is the president of the United States?"
+      },
+      "tags": {},
+      "output": {
+        "conversationId": "eb54b320-39e0-42f3-bebb-d5080deece12",
+        "message": "As of September 2021, the President of the United States is Joe Biden."
+      },
+      "metrics": {
+        "factuality": true
+      }
+    },
+    {
+      "input": {
+        "userMessage": "What is 4 + 4?"
+      },
+      "tags": {
+        "intent": "math"
+      },
+      "output": {
+        "conversationId": "e78f7dc4-8354-47a2-9a8c-c078b5d423b6",
+        "message": "4 + 4 equals 8."
+      },
+      "metrics": {
+        "exact-match": false
+      }
+    },
+    {
+      "input": {
+        "userMessage": "Goodbye"
+      },
+      "tags": {
+        "intent": "greeting"
+      },
+      "output": {
+        "conversationId": "d4562577-0f84-4e45-b96e-4b781ef53d70",
+        "message": "Goodbye! If you have any more questions in the future, feel free to ask. Have a great day!"
+      },
+      "metrics": {
+        "professionalism": 34
+      }
+    },
+    {
+      "input": {
+        "userMessage": "What's my name?"
+      },
+      "tags": {},
+      "output": {
+        "conversationId": "8b4697ec-1f63-4d93-b154-562e2a1b1395",
+        "message": "I'm sorry, but I don't have access to your personal information. How can I assist you today?"
+      },
+      "metrics": {
+        "contains": false
+      }
+    }
+  ],
+  "jobId": "f0f057a9-ffbe-4219-a3a9-a589f8153b58"
+}

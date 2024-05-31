@@ -1,0 +1,30 @@
+{
+  "experimentName": "exp1",
+  "testName": "UW1",
+  "description": "",
+  "featureFlags": {},
+  "workflowName": "test",
+  "testCaseDatasetName": "test_cases",
+  "status": {
+    "state": "success"
+  },
+  "createdAt": 1716606176304,
+  "result": [
+    {
+      "input": {
+        "userMessage": "Hello"
+      },
+      "tags": {
+        "intent": "greeting"
+      },
+      "output": {
+        "message": "Hello! How can I assist you today?",
+        "conversationId": "6ad2880d-9ecc-4827-82d8-4cc3f78fc11d"
+      },
+      "metrics": {
+        "professionalism": 4
+      }
+    }
+  ],
+  "jobId": "9e912be5-baaf-407f-9e69-5a1ba8cdcab8"
+}

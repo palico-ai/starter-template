@@ -26,3 +26,29 @@ services:
       - "14268:14268"
       - "14269:14269"
       - "9411:9411"
+  # app: # user-defined app
+  #   depends_on:
+  #     - postgres_db
+  #   build: .
+  #   expose:
+  #     - ${API_PORT}
+  #   ports:
+  #     - "${API_PORT}:${API_PORT}"
+  #   volumes:
+  #     - ./src:/app/src
+  #   command: npm run dev
+  #   environment:
+  #     - DB_URL=postgres://root:root@postgres_db:5432/root
+  #     - OPENAI_API_KEY=${OPENAI_API_KEY?error}
+  #     - OPENAI_MODEL=${OPENAI_MODEL}
+  #     - PORT=${API_PORT}
+  # studio: # a next-js frontend we provide as a docker image
+  #   image: studio:latest
+  #   ports:
+  #     - 3000:3000
+  #   environment:
+  #     - API_URL=http://app:${API_PORT}
+  #     - SERVICE_KEY=abc123
+
+  # cassandra: # storage for jaeger
+  #   image: cassandra:4.0

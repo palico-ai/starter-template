@@ -7,7 +7,8 @@
     "palico": "palico-app",
     "services": "docker-compose up",
     "dev": "nodemon --exec ts-node src/main.ts",
-    "reinstall": "(cd ../palico-main && nx run palico-app:publish-local) && npm uninstall @palico-ai/app && npm install @palico-ai/app",
+    "rebuild": "(cd ../palico-main && nx run-many -t publish-local -p palico-app -p common)",
+    "reinstall": "npm run rebuild && npm uninstall @palico-ai/app && npm install @palico-ai/app",
     "ts": "ts-node",
     "build": "tsc"
   },
@@ -25,6 +26,7 @@
     "@opentelemetry/sdk-trace-node": "^1.24.0",
     "@palico-ai/app": "^1.12.11",
     "dotenv": "^16.4.3",
+    "lodash.omit": "^4.5.0",
     "nodemon": "^3.1.0",
     "openai": "^4.24.1"
   },

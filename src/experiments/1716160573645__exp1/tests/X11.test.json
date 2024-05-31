@@ -1,0 +1,30 @@
+{
+  "experimentName": "exp1",
+  "testName": "X11",
+  "description": "",
+  "featureFlags": {},
+  "workflowName": "test",
+  "testCaseDatasetName": "test_cases",
+  "status": {
+    "state": "success"
+  },
+  "createdAt": 1716681802871,
+  "result": [
+    {
+      "input": {
+        "userMessage": "Hello"
+      },
+      "tags": {
+        "intent": "greeting"
+      },
+      "output": {
+        "message": "Hello! How can I assist you today?",
+        "conversationId": "8c220037-c783-4b7b-b8be-d85bcdd91a2a"
+      },
+      "metrics": {
+        "professionalism": 65
+      }
+    }
+  ],
+  "jobId": "319d6039-7748-49c2-b686-fc12b2fbda4e"
+}

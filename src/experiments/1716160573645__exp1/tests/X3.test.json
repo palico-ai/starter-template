@@ -1,0 +1,30 @@
+{
+  "experimentName": "exp1",
+  "testName": "X3",
+  "description": "",
+  "featureFlags": {},
+  "agentName": "intent_classifier",
+  "testCaseDatasetName": "test_cases",
+  "status": {
+    "state": "success"
+  },
+  "createdAt": 1716607073976,
+  "result": [
+    {
+      "input": {
+        "userMessage": "Hello"
+      },
+      "tags": {
+        "intent": "greeting"
+      },
+      "output": {
+        "conversationId": "15b8fcbb-58e1-423c-a0b5-967042217d15",
+        "message": "Hello! How can I assist you today?"
+      },
+      "metrics": {
+        "professionalism": 15
+      }
+    }
+  ],
+  "jobId": "bfc8b7e1-ffe4-489f-bd22-0a47499e8920"
+}

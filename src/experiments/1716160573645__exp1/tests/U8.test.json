@@ -1,0 +1,30 @@
+{
+  "experimentName": "exp1",
+  "testName": "U8",
+  "description": "",
+  "featureFlags": {},
+  "agentName": "intent_classifier",
+  "testCaseDatasetName": "test_cases",
+  "status": {
+    "state": "success"
+  },
+  "createdAt": 1716605694701,
+  "result": [
+    {
+      "input": {
+        "userMessage": "Hello"
+      },
+      "tags": {
+        "intent": "greeting"
+      },
+      "output": {
+        "conversationId": "2e216f1e-3871-45b9-b717-bed8b84811d8",
+        "message": "Hello! How can I assist you today?"
+      },
+      "metrics": {
+        "professionalism": 52
+      }
+    }
+  ],
+  "jobId": "b1c44268-fadd-4902-825b-fe5199a79328"
+}

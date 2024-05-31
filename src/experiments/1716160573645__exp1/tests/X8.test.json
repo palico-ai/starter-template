@@ -1,0 +1,15 @@
+{
+  "experimentName": "exp1",
+  "testName": "X8",
+  "description": "",
+  "featureFlags": {},
+  "agentName": "intent_classifier",
+  "testCaseDatasetName": "test_cases",
+  "status": {
+    "state": "failed",
+    "message": "⨯ Unable to compile TypeScript:\n\u001b[96msrc/datasets/test_cases/index.ts\u001b[0m:\u001b[93m2\u001b[0m:\u001b[93m8\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS1192: \u001b[0mModule '\"/Users/asifshikder/Projects/Palico/example-agent/src/datasets/test_cases/tests\"' has no default export.\n\n\u001b[7m2\u001b[0m import dataset from \"./tests\";\n\u001b[7m \u001b[0m \u001b[91m       ~~~~~~~\u001b[0m\n"
+  },
+  "createdAt": 1716610598883,
+  "result": [],
+  "jobId": "46547add-7de0-4085-84c5-687be2c5161b"
+}
